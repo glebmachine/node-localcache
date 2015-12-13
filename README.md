@@ -20,7 +20,7 @@ cache.getItem('key'); // value
 ```js
 new LocalCache(fileName, skipFileCaching);
 ```
-- `fileName` - (optional) Path to cache file, also used as store `id`
+- `fileName` - (optional with `skipFileCaching`: `true`) Path to cache file, also used as store `id`
 - `skipFileCaching` - (optional) disable file cache, default `false`
 
 ## Perfomance
