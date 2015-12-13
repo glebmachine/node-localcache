@@ -4,7 +4,7 @@
 [ci-img]:  https://travis-ci.org/glebmachine/node-localcache.svg
 [ci]:      https://travis-ci.org/glebmachine/node-localcache
 
-Module, allows to save application data between launches (like LocalStorage in browser).
+Module, allows to save application data between launches in json data file. Api most liked as LocalStorage API
 
 ## Usage
 
@@ -23,6 +23,6 @@ new LocalCache(fileName, skipFileCaching);
 - `fileName` - (optional with `skipFileCaching`: `true`) Path to cache file, also used as store `id`
 - `skipFileCaching` - (optional) disable file cache, default `false`
 
-## Perfomance
-All FS manipulation agregating and applying 1 time per second.
+## FS Perfomance
+All manipulation agregating and applying 1 time per second. But, don't panic, on nodejs exit, everything will be saved into file.
 
