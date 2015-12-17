@@ -6,16 +6,18 @@ var _ = require('lodash');
 var chalk = require('chalk');
 var idIncrement = 0;
 var index = {};
+var logging = false;
 
 function log() {
-  var data = Array.prototype.slice.call(arguments);
-  console.log.apply(false, data);
+  var data = ['LocalCache: '].concat(Array.prototype.slice.call(arguments));
+  if (logging) {
+    console.log.apply(false, data);
+  }
 }
 
 var LocalCache;
 module.exports = LocalCache = function LocalCache(fileName, skipFileCaching) {
   if (index[fileName]) {
-    console.log('return old instance');
     return index[fileName];
   }
 
