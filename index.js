@@ -72,6 +72,10 @@ module.exports = LocalCache = function LocalCache(fileName, skipFileCaching) {
 };
 
 LocalCache.prototype.setItem = function setItem(key, value) {
+  if (!key) { throw new Error('key should be defined'); }
+
+  if (value === undefined) { throw new Error('value also should be defined as well'); }
+
   key = key.toString();
   this.storage[key] = value;
   this.fileSync();
@@ -79,6 +83,8 @@ LocalCache.prototype.setItem = function setItem(key, value) {
 };
 
 LocalCache.prototype.getItem = function setItem(key) {
+  if (!key) { throw new Error('key should be defined'); }
+
   key = key.toString();
   return this.storage[key];
 };
