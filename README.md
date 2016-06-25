@@ -1,8 +1,6 @@
 
 
-# Node LocalCache [![Build Status][ci-img]][ci]
-[ci-img]:  https://travis-ci.org/glebmachine/node-localcache.svg
-[ci]:      https://travis-ci.org/glebmachine/node-localcache
+# Node LocalCache [![Build Status](https://travis-ci.org/glebmachine/node-localcache.svg?branch=master)](https://travis-ci.org/glebmachine/node-localcache) [![npm version](https://badge.fury.io/js/node-localcache.svg)](http://badge.fury.io/js/node-localcache)
 
 Module, allows to save application data between launches in json data file. Api most liked as LocalStorage API
 
