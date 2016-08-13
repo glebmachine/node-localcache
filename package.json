@@ -39,7 +39,7 @@
     "gulp-mocha": "2.2.0",
     "jscs": "3.0.4",
     "jshint": "2.8.0",
-    "jshint-stylish": "2.1.0",
+    "jshint-stylish": "2.2.1",
     "tape": "4.2.2"
   },
   "scripts": {
