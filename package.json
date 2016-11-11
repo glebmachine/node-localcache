@@ -30,7 +30,7 @@
     "eslint-plugin-jsx-a11y": "1.5.3",
     "eslint-plugin-react": "5.2.2",
     "eslint-watch": "2.1.11",
-    "git-hooks": "1.0.2",
+    "git-hooks": "1.1.7",
     "gulp": "3.9.0",
     "gulp-babel": "6.1.1",
     "gulp-jscs": "4.0.0",
